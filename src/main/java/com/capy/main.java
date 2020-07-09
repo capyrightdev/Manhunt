@@ -15,7 +15,7 @@ public final class main extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(new events(), this);
         getCommand("manhunt").setExecutor(new manhunt());
         getCommand("team").setExecutor(new team());
-        getCommand("teleport").setExecutor(new teleport());
+        getCommand("tp").setExecutor(new teleport());
     }
 
 }
