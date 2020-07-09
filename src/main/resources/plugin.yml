@@ -1,0 +1,7 @@
+name: Manhunt
+version: ${project.version}
+main: com.capy.main
+api-version: 1.16
+commands:
+  team:
+  manhunt:
