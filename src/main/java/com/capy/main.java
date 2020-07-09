@@ -2,6 +2,7 @@ package com.capy;
 
 import com.capy.commands.manhunt;
 import com.capy.commands.team;
+import com.capy.overseer.teleport;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
@@ -14,6 +15,7 @@ public final class main extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(new events(), this);
         getCommand("manhunt").setExecutor(new manhunt());
         getCommand("team").setExecutor(new team());
+        getCommand("teleport").setExecutor(new teleport());
     }
 
 }

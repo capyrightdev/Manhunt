@@ -3,6 +3,7 @@ package com.capy.commands;
 import com.capy.events;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -39,6 +40,7 @@ public class team implements CommandExecutor {
                         runnerTeam.remove(p);
                         hunterTeam.remove(p);
                     }
+                        p.setGameMode(GameMode.SPECTATOR);
                         overseerTeam.add(p);
                         Bukkit.broadcastMessage(ChatColor.DARK_RED + "IAMCOPYRIGHTED HAS BECOME THE OVERSEER");
                     }
